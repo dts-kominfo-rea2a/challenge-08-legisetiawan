@@ -41,13 +41,22 @@
       // TODO: Buatlah sebuah fungsi dengan nama fnClickHandler
       // Fungsi yang digunakan untuk menambahkan tulisan
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
-      function fnClickHandler(toDoItem) {}
+      function fnClickHandler(toDoItem) {
+        output.innerHTML += `<li>${toDoItem}</li>`;
+        input.value = ''
+        input.fokus()
+      }
 
       // TODO: register event onclick / addEventListener untuk button
       // akan menjalankan fungsi fnClickHandler
-      
+      button.addEventListener('click',(e) =>{
+        fnClickHandler(input.value);
+      });
       // TODO: register event onkeypress / addEventListener untuk input
       // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
+      input.addEventListener('click',(code) => {
+        return code === 13 && fnClickHandler(input.value)
+      });
     </script>
   </body>
 </html>
