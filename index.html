@@ -34,9 +34,9 @@
     <!-- ! Untuk tantangan ini, script jangan diubah ke external js yah ! -->
     <script>
       // TODO: Deklarasi variable sesuai dengan kebutuhan di sini
-      let button = document.querySelector("#todo-submit");
-      let input = document.querySelector("#todo-input");
-      let output = document.querySelector("#todo-output");
+      let button=document.querySelector("#todo-submit")
+      let input=document.querySelector("#todo-input")
+      let output=document.querySelector("#todo-output")
 
       // TODO: Buatlah sebuah fungsi dengan nama fnClickHandler
       // Fungsi yang digunakan untuk menambahkan tulisan
@@ -54,8 +54,8 @@
       });
       // TODO: register event onkeypress / addEventListener untuk input
       // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
-      input.addEventListener('keypress',({code}) => {
-        return code === 13 && fnClickHandler(input.value)
+      input.addEventListener('keypress',({charCode}) => {
+        return charCode === 13 && fnClickHandler(input.value)
       });
     </script>
   </body>

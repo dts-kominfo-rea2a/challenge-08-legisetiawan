@@ -1,0 +1,12 @@
+div#app{
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background:rgb(255, 255, 255);
+    border-radius: 20px;
+}
+body {
+    background: rgb(0, 0, 0);
+}
